@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Christopher Keers">
+        <meta name="keywords" content="Site, Planning, Style, Guide, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+        <meta name="description" content="This is a homework assignment for WDD 130.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Site Planning - BYUI</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+        <!-- END EDITS -->
+        <link rel="stylesheet" href="style-guide.css">
+    </head>
+    <body>
+        <h1>Final Project Style Guide</h1>
+        <button>Toggle Dark Mode</button>
+        <div>
+            <h2>Normal Colors</h2>
+            <div class="color-wrapper">
+                <div class="title">
+                    Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #EEECE8
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #DDBEA9
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #EDDCD2
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #FFFFFF
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Dark Mode Colors</h2>
+            <div class="color-wrapper">
+                <div class="title">
+                    Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #443333
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #A5A58D
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #B7B7A4
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #CB997E
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Fonts</h2>
+            <p>
+                I have chosen to use the following fonts for my site: 
+            </p>
+            <ul>
+                <li>
+                    Brushstroke: Used for headlines.
+                </li>
+                <li>
+                    Sans-serif: Used for the primary font.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Elevator Pitch</h2>
+            <p>
+                Hello, my name is Mariah Rigby, and I am attending Brigham Young University-Idaho. I am currently studying Web Development I would love to design a website for an outdoor lodge located in the Sawtooth Mountains. This website is going to raise awareness for this company and in turn, build revenue for them. It will also increase customers and ultimately business for this company and what they have to offer. Because this website is so unique and easy to navigate it will be usable for all audiences. In this website it will include the history of the lodge, the nearby activities around the area, cabin rental prices and dining options. It is going to have a very simple but elegant layout. Thank you for your time.
+            </p>
+        </div>
+        <div>
+            <h2>Purpose Statement</h2>
+            <p>
+                Our Purpose is to build revenue for this growing business, by sharing information and getting the word out. There need to be more people that know about this business and all the great things it can offer them. By sharing information on our webpage, we can help people to know and understand why we are doing what we are doing. The more people that ultimately find out about this business, the more that will consider coming and taking a look for themselves which will ultimately provide more profit that this business can use to better our resources and create a more enjoyable experience for our customers. 
+            </p>
+        </div>
+        <div>
+            <h2>Audience Statement</h2>
+            <p>
+                In our company we have two types of audiences that we market too. The first is families. We try and make our lodge as family friendly as possible so that the environment is an inviting one. We also offer many deals with white water rafting companies and horseback riding companies so that we can meet the needs of our guests who want a fun family activity. The second audience is the elderly. After our busy season when kids are back in school, the lake is a beautiful peaceful place that is perfect for relaxing. We offer a spa and great indoor dining as well to ensure that they are comfortable! 
+            </p>
+        </div>
+        <div>
+            <h2>Misson Statement</h2>
+            <p>
+                Our mission is to create a place where people can get out of their houses and enjoy the outdoors! The fresh mountain air of the Sawtooth mountains is healing and rejuvenating. We want to create an environment that is family friendly as well as inviting and relaxing. We create a place where our client can choose if they want the adventure of a lifetime, or just a nice relaxing getaway. We hope that people will appreciate and learn to love the great outdoors as much as we do! We have friendly service, excellent dining, and many activity options. Our real mission is to serve YOU, and to help you have an amazing experience.
+            </p>
+        </div>
+        <div>
+            <h2>Persona and Scenario Ideas</h2>
+            <p>
+                Please replace this text with your ideas. Use multiple paragraph tags as needed.
+            </p>
+        </div>
+        <script>
+            /**
+             * This script adds a listener to the dark mode toggle button.
+             * When it is clicked the class .dark-mode is added or removed
+             * from the body. In our CSS file we added specific rules to
+             * the page when the .dark-mode class is present.
+             */
+            var toggle = document.querySelector('button');
+            if ( toggle ) {
+                toggle.addEventListener( 'click', toggleDarkMode );
+            }
+
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+    </body>
+</html>

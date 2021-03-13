@@ -3,7 +3,7 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: white;
+    --background-color: rgb( green);
     --alt-background-color: gainsboro;
     --font-color: black;
     --alt-font-color: darkslategray;
@@ -63,6 +63,33 @@ header nav ul li {
     margin-right: 7.5px;
 }
 
+
+
+main p{text-align:center;
+    font-size:25px;
+    line-height: 50px;
+}
+#banner{
+    width:100%;
+    
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+    font-family:brush script MT , cursive
+  
+}
+
+h2{
+    font-size:30px;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   
+}
+
+
+
 main {
     flex: 1;
     font-size: var(--font-size);
@@ -71,6 +98,42 @@ main {
     background-color: var(--background-color);
 }
 
+
+section.firstblock{
+    display:grid;
+}
+
+
+
+
+.firstblock .left-column p{
+    font-size:27px;
+    line-height: 40px
+}
+
+.firstblock .left-column ul{
+    font-size: 27px;
+    
+}
+
+.secondblock .right-column p{
+    font-size:27px;
+    line-height: 40px  
+    
+}
+
+.secondblock .right-column ul{
+    font-size: 27px;
+}
+
+
+
+
+.thirdblock p{
+    text-align:center;
+    font-family:brush script MT;
+    font-size:50px;
+}
 footer {
     display: grid;
     grid-template-rows: auto;
@@ -265,6 +328,15 @@ body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
     grid-column:2;
     grid-row:2;
     
+  }
+
+  #cabin1{
+      width:750px
+      
+  }
+
+  #marina{
+      width:750px;
   }
   
   

@@ -3,17 +3,17 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: rgb( green);
-    --alt-background-color: gainsboro;
-    --font-color: black;
-    --alt-font-color: darkslategray;
-    --border-color: black;
+
+
+    --background-color: #eff1f5;
+    --alt-background-color: #99ac8b;
+    --primary-color: #f5eae4;
+    --alt-primary-color: #FFFFFF;
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
-    --dark-font-color: white;
-    --dark-alt-font-color: gainsboro;
-    --dark-border-color: white;
+    --dark-background-color: #789986;
+    --dark-alt-background-color: #443333;
+    --dark-primary-color: #73a36c;
+    --dark-alt-primary-color: #CB997E;
 }
 
 html, body {
@@ -387,4 +387,70 @@ section.firstblock{
     padding:10px;
   }
   
+
+/*ABOUT US CSS*/
+section.about-us{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+section.about-us.emp1{
+grid-row:1;
+grid-column:1;
+padding:100px;
+margin:100px;
+}
+
+section.about-us .q1{
+    grid-column:2;
+    grid-row:1;
+    margin:10px;
+    padding:10px;
+    font-family:cursive;
+    font-size:20px;
+    line-height:2;
+    
+
+}
+
+section.about-us.emp2{
+    grid-row:2;
+    grid-column:1;
+    padding:10px;
+    
+margin:100px;
+
+}
+section.about-us .q2{
+    grid-column:2;
+    grid-row:2;
+    padding:10px;
+margin:10px;
+font-family:cursive;
+font-size:20px;
+line-height:2
+
+}
+
+
+
+
+section.about-us.emp3{
+        grid-row:3;
+        grid-column:1;
+        padding:10px;
+        padding:100px;
+margin:100px;
+        }
+        
+    section.about-us .q3{
+        grid-column:2;
+        grid-row:3;
+        padding:10px;
+margin:10px;
+font-family:cursive;
+font-size:20px;
+line-height:2
+    }
+
 

@@ -389,61 +389,175 @@ section.firstblock{
   
 
 /*ABOUT US CSS*/
-section.about-us{
+
+
+
+              .card1 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+              }
+              
+              .title {
+                color: grey;
+                font-size: 18px;
+              }
+              
+              button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+              
+              button:hover, a:hover {
+                opacity: 0.7;
+              }
+
+              .card2 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+              }
+              
+              .title {
+                color: grey;
+                font-size: 18px;
+              }
+              
+              button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+              
+              button:hover, a:hover {
+                opacity: 0.7;
+              }
+
+
+              .card3 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+              }
+              
+              .title {
+                color: grey;
+                font-size: 18px;
+              }
+              
+              button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+              
+              button:hover, a:hover {
+                opacity: 0.7;
+              }
+  
+section.about-all h2{ 
+        font-family:"Helvetica Thin";  
+}
+section.about-us1{
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
 }
-section.about-us.emp1{
-grid-row:1;
+section.about-us1.card1{
 grid-column:1;
 padding:100px;
 margin:100px;
 }
-
-section.about-us .q1{
+section.about-us1.q1{
     grid-column:2;
-    grid-row:1;
+    
+}
+
+section.about-us2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+section.about-us2.card2{
+    
+    grid-column:;
+    padding:100px;
+    margin:100px;
+    }
+
+section.about-us2.q2{
+    grid-column:2;
+    section.about-us .q2{
+        grid-column:2;
+        grid-row:2;
+        padding:10px;
     margin:10px;
-    padding:10px;
     font-family:cursive;
     font-size:20px;
-    line-height:2;
-    
-
+    line-height:2}
 }
 
-section.about-us.emp2{
-    grid-row:2;
-    grid-column:1;
-    padding:10px;
-    
-margin:100px;
-
+section.about-us3{
+    display:grid;
+    grid-template-columns:1fr 1fr; 
 }
-section.about-us .q2{
-    grid-column:2;
-    grid-row:2;
-    padding:10px;
-margin:10px;
-font-family:cursive;
-font-size:20px;
-line-height:2
-
-}
-
-
-
-
-section.about-us.emp3{
-        grid-row:3;
+ section.about-us3.card3{
+  
         grid-column:1;
-        padding:10px;
         padding:100px;
-margin:100px;
+        margin:100px;
         }
-        
-    section.about-us .q3{
+section.about-us3.q3{
+    gird-column2;
+}
+    
+    section.about-us.q3{
         grid-column:2;
         grid-row:3;
         padding:10px;
@@ -454,3 +568,38 @@ line-height:2
     }
 
 
+ /*Contact Us*/
+ 
+ .FormBox {
+     display:flex;
+     justify-content: center;
+    
+ }
+
+ form {
+    width:50%
+ }
+ .container{
+     font-size:20px;
+     margin-right:auto;
+     margin-top:1px;
+     margin-left:auto;
+     margin-bottom:1px;
+     text-align:center;
+width:50%;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+
+ }
+
+ .ptext{
+     text-align: center;
+     margin-bottom:auto;
+ }
+
+ button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 10px;

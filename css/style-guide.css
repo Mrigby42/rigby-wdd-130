@@ -2,7 +2,7 @@
 :root {
     /* Normal Colors */
     --background-color: #eeece8;
-    --alt-background-color: #DDBEA9;
+    --alt-background-color: #99ac8b;
     --primary-color: #EDDCD2;
     --alt-primary-color: #FFFFFF;
     /* Dark Mode Colors */
@@ -23,6 +23,12 @@ html, body {
 *:after {
   box-sizing: inherit;
 }
+
+
+header{
+    --background-color: var(--alt-background-color);
+}
+
 
 body {
     font-size: 62.5%;

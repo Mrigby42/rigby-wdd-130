@@ -9,11 +9,15 @@
     --alt-background-color: #99ac8b;
     --primary-color: #f5eae4;
     --alt-primary-color: #FFFFFF;
+    --toggle-button:green;
+    --container-box:#99ac8b;
     /* Dark Mode Colors */
     --dark-background-color: #789986;
     --dark-alt-background-color: #443333;
     --dark-primary-color: #73a36c;
     --dark-alt-primary-color: #CB997E;
+    --dark-toggle-button:black;
+    --dark-container-box:grey;
 }
 
 html, body {
@@ -85,6 +89,7 @@ h2{
     font-size:30px;
     text-align:center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
    
 }
 
@@ -257,6 +262,7 @@ footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
     border-radius: 50%;
     background-color: var(--border-color);
     transition: all 0.2s ease;
+    background-color: var(--toggle-button);
 }
 
 footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:before {
@@ -309,6 +315,11 @@ body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
 
 body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
     background-color: var(--dark-border-color);
+    background-color: var(--dark-toggle-button);}
+
+body.dark-mode .container{
+    background-color: var(--dark-container-box);
+
 }
 
 
@@ -503,11 +514,14 @@ section.firstblock{
   
 section.about-all h2{ 
         font-family:"Helvetica Thin";  
+        margin:50px;
 }
 section.about-us1{
     display:grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    margin:50px;
+    padding:50px;
 }
 section.about-us1.card1{
 grid-column:1;
@@ -521,7 +535,9 @@ section.about-us1.q1{
 
 section.about-us2{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:auto 1fr;
+    margin:50px;
+    padding:60px;
 }
 
 section.about-us2.card2{
@@ -545,7 +561,9 @@ section.about-us2.q2{
 
 section.about-us3{
     display:grid;
-    grid-template-columns:1fr 1fr; 
+    grid-template-columns:auto 1fr; 
+    margin:50px;
+    padding:50px;
 }
  section.about-us3.card3{
   
@@ -577,7 +595,7 @@ line-height:2
  }
 
  form {
-    width:50%
+    width:60%
  }
  .container{
      font-size:20px;
@@ -588,7 +606,9 @@ line-height:2
      text-align:center;
 width:50%;
 border-radius: 5px;
-background-color: #f2f2f2;
+background-color: var(--container-box);
+
+
 padding: 20px;
 
  }
@@ -603,3 +623,14 @@ padding: 20px;
     font-size: 100%;
     line-height: 1.15;
     margin: 10px;
+    
+
+.ptext{
+    font-size:50px;
+
+}
+
+label{
+    font-size:800px;
+  
+}

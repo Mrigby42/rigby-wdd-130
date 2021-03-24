@@ -1,0 +1,651 @@
+:root {
+    /* Settings */
+    --spacing: 15px;
+    --font-size: 1.15rem;
+    /* Normal Colors */
+
+
+    --background-color: #eff1f5;
+    --alt-background-color: #99ac8b;
+    --primary-color: #f5eae4;
+    --alt-primary-color: #FFFFFF;
+    --toggle-button:green;
+    --container-box:#99ac8b;
+    /* Dark Mode Colors */
+    --dark-background-color: #789986;
+    --dark-alt-background-color: #443333;
+    --dark-primary-color: #73a36c;
+    --dark-alt-primary-color: #CB997E;
+    --dark-toggle-button:black;
+    --dark-container-box:grey;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    font-size: var(--font-size);
+    padding: var(--spacing);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--alt-font-color);
+    background-color: var(--alt-background-color);
+}
+
+header a {
+    color: var(--alt-font-color);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 7.5px;
+    margin-right: 7.5px;
+}
+
+
+
+main p{text-align:center;
+    font-size:25px;
+    line-height: 50px;
+}
+#banner{
+    width:100%;
+    
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+    font-family:brush script MT , cursive
+  
+}
+
+h2{
+    font-size:30px;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+   
+}
+
+
+
+main {
+    flex: 1;
+    font-size: var(--font-size);
+    padding: var(--spacing);
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+
+section.firstblock{
+    display:grid;
+}
+
+
+
+
+.firstblock .left-column p{
+    font-size:27px;
+    line-height: 40px
+}
+
+.firstblock .left-column ul{
+    font-size: 27px;
+    
+}
+
+.secondblock .right-column p{
+    font-size:27px;
+    line-height: 40px  
+    
+}
+
+.secondblock .right-column ul{
+    font-size: 27px;
+}
+
+
+
+
+.thirdblock p{
+    text-align:center;
+    font-family:brush script MT;
+    font-size:50px;
+}
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr auto;
+    font-size: var(--font-size);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing);
+    color: var(--alt-font-color);
+    background-color: var(--alt-background-color);
+}
+
+footer a {
+    color: var(--alt-font-color);
+}
+
+footer #legal {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+}
+
+footer nav {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+    padding: 7.5px;
+    margin-right: 7.5px;
+}
+
+footer #dark-mode {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+footer #dark-mode .icon {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+    pointer-events: none;
+}
+
+footer #dark-mode .icon svg path {
+    fill: var(--background-color);
+}
+
+footer #dark-mode #sun-icon svg {
+    transform: scale(0.9);
+    position: absolute;
+    top: -32px;
+    left: 15px;
+}
+
+footer #dark-mode #moon-icon svg {
+    transform: scale(0.85);
+    position: absolute;
+    top: -32px;
+    right: 15px;
+}
+
+footer #dark-mode #tgl-wrapper {
+    display: inline-block;
+}
+
+footer #dark-mode #tgl-wrapper .tgl {
+    display: none;
+}
+
+footer #dark-mode #tgl-wrapper .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+
+footer #dark-mode #tgl-wrapper .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+    background: none;
+}
+
+footer #dark-mode #tgl-wrapper .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+    background: none;
+}
+
+footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    padding: 3px;
+    transition: all 0.4s ease;
+}
+
+footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    transition: all 0.2s ease;
+    background-color: var(--toggle-button);
+}
+
+footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:before {
+    display: none;
+    transition: all 0.2s ease;
+}
+
+footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
+    left: 50%;
+    transition: all 0.2s ease;
+}
+
+/*===========================================*\
+  APPLY DARK MODE COLORS WHEN DARK MODE IS ON 
+\*===========================================*/
+
+body.dark-mode header {
+    border-bottom: 1px solid var(--dark-border-color);
+    color: var(--dark-alt-font-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode header a {
+    color: var(--dark-alt-font-color);
+}
+
+body.dark-mode main {
+    color: var(--dark-font-color);
+    background-color: var(--dark-background-color);
+}
+
+body.dark-mode footer {
+    border-top: 1px solid var(--dark-border-color);
+    color: var(--dark-alt-font-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode footer a {
+    color: var(--dark-alt-font-color);
+}
+
+body.dark-mode footer #dark-mode .icon svg path {
+    fill: var(--dark-background-color);
+}
+
+body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
+    background-color: var(--dark-background-color);
+    border: 1px solid var(--dark-border-color);
+}
+
+body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
+    background-color: var(--dark-border-color);
+    background-color: var(--dark-toggle-button);}
+
+body.dark-mode .container{
+    background-color: var(--dark-container-box);
+
+}
+
+
+
+
+.my-picture {
+    max-width: 350px;
+    height: auto;
+  }
+  
+  .backpacker {
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .right-column{
+    grid-column:2;
+    grid-row:2;
+    
+  }
+
+  #cabin1{
+      width:750px
+      
+  }
+
+  #marina{
+      width:750px;
+  }
+  
+  
+section.firstblock{
+  
+    display:grid;
+    grid-template-columns:1fr;
+      grid-template-rows: 100px 1fr 100px;
+   
+   margin:50px;
+  padding:50px;
+    
+  }
+  
+  section.firstblock .left-column{
+    grid-column:1;
+    grid-row:1;
+    padding:50px;
+    
+  
+  
+    
+  }
+  section.firstblock .Right-column{
+    grid-column:1;
+    grid-row:3;
+    margin:500px;
+  }
+  
+  section.secondblock{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 30px 1fr;
+    height:700px;
+    padding:30px;
+ 
+    margin:50px;
+    
+  }
+  
+  section.secondblock.right-column{
+    grid-row:1;
+    padding:100px;
+   
+  }
+  
+  section.secondblock .left-column{
+    padding:10px;
+  }
+  
+
+/*ABOUT US CSS*/
+
+
+
+              .card1 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+              }
+              
+              .title {
+                color: grey;
+                font-size: 18px;
+              }
+              
+              button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+              
+              button:hover, a:hover {
+                opacity: 0.7;
+              }
+
+              .card2 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+              }
+              
+              .title {
+                color: grey;
+                font-size: 18px;
+              }
+              
+              button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+              
+              button:hover, a:hover {
+                opacity: 0.7;
+              }
+
+
+              .card3 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+              }
+              
+              .title {
+                color: grey;
+                font-size: 18px;
+              }
+              
+              button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+              }
+              
+              a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+              
+              button:hover, a:hover {
+                opacity: 0.7;
+              }
+  
+section.about-all h2{ 
+        font-family:"Helvetica Thin";  
+        margin:50px;
+}
+section.about-us1{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    margin:50px;
+    padding:50px;
+}
+section.about-us1.card1{
+grid-column:1;
+padding:100px;
+margin:100px;
+}
+section.about-us1.q1{
+    grid-column:2;
+    
+}
+
+section.about-us2{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    margin:50px;
+    padding:60px;
+}
+
+section.about-us2.card2{
+    
+    grid-column:;
+    padding:100px;
+    margin:100px;
+    }
+
+section.about-us2.q2{
+    grid-column:2;
+    section.about-us .q2{
+        grid-column:2;
+        grid-row:2;
+        padding:10px;
+    margin:10px;
+    font-family:cursive;
+    font-size:20px;
+    line-height:2}
+}
+
+section.about-us3{
+    display:grid;
+    grid-template-columns:auto 1fr; 
+    margin:50px;
+    padding:50px;
+}
+ section.about-us3.card3{
+  
+        grid-column:1;
+        padding:100px;
+        margin:100px;
+        }
+section.about-us3.q3{
+    gird-column2;
+}
+    
+    section.about-us.q3{
+        grid-column:2;
+        grid-row:3;
+        padding:10px;
+margin:10px;
+font-family:cursive;
+font-size:20px;
+line-height:2
+    }
+
+
+ /*Contact Us*/
+ 
+ .FormBox {
+     display:flex;
+     justify-content: center;
+    
+ }
+
+ form {
+    width:60%
+ }
+ .container{
+     font-size:20px;
+     margin-right:auto;
+     margin-top:1px;
+     margin-left:auto;
+     margin-bottom:1px;
+     text-align:center;
+width:50%;
+border-radius: 5px;
+background-color: var(--container-box);
+
+
+padding: 20px;
+
+ }
+
+ .ptext{
+     text-align: center;
+     margin-bottom:auto;
+ }
+
+ button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 10px;
+    
+
+.ptext{
+    font-size:50px;
+
+}
+
+label{
+    font-size:800px;
+  
+}
+
+ /*FAQ'S*/
+
+ .faqs #dt{
+    line-height: 200%;
+font-family:fantasy;
+ }
+
+ .faqs #dd{
+     font-family:
+ }
+
+ h5{
+     font-family:cursive;
+ }

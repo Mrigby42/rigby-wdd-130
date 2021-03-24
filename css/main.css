@@ -634,3 +634,18 @@ label{
     font-size:800px;
   
 }
+
+ /*FAQ'S*/
+
+ .faqs #dt{
+    line-height: 200%;
+font-family:fantasy;
+ }
+
+ .faqs #dd{
+     font-family:
+ }
+
+ h5{
+     font-family:cursive;
+ }

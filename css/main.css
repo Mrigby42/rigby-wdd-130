@@ -1,7 +1,7 @@
 :root {
     /* Settings */
     --spacing: 15px;
-    --font-size: 1.15rem;
+    --font-size: 1.5rem;
     /* Normal Colors */
 
 
@@ -79,7 +79,7 @@ main p{text-align:center;
 }
 
 h1{
-    font-size:50px;
+    font-size:70px;
     text-align:center;
     font-family:brush script MT , cursive
   
@@ -325,36 +325,30 @@ body.dark-mode .container{
 
 
 
-.my-picture {
-    max-width: 350px;
-    height: auto;
+
+  .left-column{
+      grid-column:1;
+      grid-row:2;
+      
+
   }
-  
-  .backpacker {
-    max-width: 600px;
-    height: auto;
-  }
-  
   .right-column{
     grid-column:2;
     grid-row:2;
+    padding:10px;
     
   }
 
-  #cabin1{
-      width:750px
-      
-  }
 
-  #marina{
-      width:750px;
-  }
+      
+  
+  
   
   
 section.firstblock{
   
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
       grid-template-rows: 100px 1fr 100px;
    
    margin:50px;
@@ -374,13 +368,13 @@ section.firstblock{
   section.firstblock .Right-column{
     grid-column:1;
     grid-row:3;
-    margin:500px;
+    margin:100px;
   }
   
   section.secondblock{
     display:grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 100px 1fr 100px;
     height:700px;
     padding:30px;
  
@@ -395,7 +389,11 @@ section.firstblock{
   }
   
   section.secondblock .left-column{
-    padding:10px;
+    padding:100px;
+  }
+
+  section.firstblock .left-column ul{
+      grid-row:3;
   }
   
 
@@ -637,15 +635,54 @@ label{
 
  /*FAQ'S*/
 
- .faqs #dt{
-    line-height: 200%;
-font-family:fantasy;
+faqs dt{
+    line-height: 100;
+    font-family: fantasy;
+    font-weight: bold;
  }
 
- .faqs #dd{
-     font-family:
- }
+
 
  h5{
      font-family:cursive;
  }
+
+ /*wireframe*/
+ .left-column{
+    grid-column:1;
+    grid-row:2;
+    
+
+}
+.right-column{
+  grid-column:2;
+  grid-row:2;
+  padding:10px;
+
+
+}
+
+
+
+
+.firstblock .left-column p{
+    font-size:27px;
+    line-height: 40px
+}
+
+.firstblock .left-column ul{
+    font-size: 27px;
+    
+}
+
+.secondblock .right-column p{
+    font-size:27px;
+    line-height: 40px  
+    
+}
+
+.secondblock .right-column ul{
+    font-size: 27px;
+}
+
+

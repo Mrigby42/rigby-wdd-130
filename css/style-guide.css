@@ -34,7 +34,7 @@ body {
     font-size: 62.5%;
     padding: 2rem 1rem;
     text-align: center;
-    font-family: 'Cedarville Cursive', cursive; /* EDIT */
+    font-family: 'Times New Roman', cursive; /* EDIT */
 }
 
 body h1 {
@@ -42,12 +42,12 @@ body h1 {
     font-size: 2.5rem;
     text-decoration: underline;
     text-align: center;
-    font-family: 'Calligraffitti', cursive; /* EDIT */
+    font-family: 'brush script MT', cursive; /* EDIT */
 }
 
 body h2 {
     font-size: 1.75rem;
-    font-family: 'Calligraffitti', cursive; /* EDIT */
+    font-family: 'Gill Sans', cursive; /* EDIT */
 }
 
 body button {

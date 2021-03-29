@@ -635,8 +635,8 @@ label{
 
  /*FAQ'S*/
 
-faqs dt{
-    line-height: 100;
+.faqs dl dt{
+    line-height: 1200;
     font-family: fantasy;
     font-weight: bold;
  }

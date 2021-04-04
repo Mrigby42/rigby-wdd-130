@@ -6,8 +6,8 @@
     --primary-color: #EDDCD2;
     --alt-primary-color: #FFFFFF;
     /* Dark Mode Colors */
-    --dark-background-color: #443333;
-    --dark-alt-background-color: #A5A58D;
+    --dark-background-color: #789986;
+    --dark-alt-background-color: #443333;
     --dark-primary-color: #B7B7A4;
     --dark-alt-primary-color: #CB997E;
 }
@@ -34,7 +34,8 @@ body {
     font-size: 62.5%;
     padding: 2rem 1rem;
     text-align: center;
-    font-family: 'Times New Roman', cursive; /* EDIT */
+    font-family: 'Times New Roman', cursive;
+     /* EDIT */
 }
 
 body h1 {
@@ -42,7 +43,9 @@ body h1 {
     font-size: 2.5rem;
     text-decoration: underline;
     text-align: center;
-    font-family: 'brush script MT', cursive; /* EDIT */
+    font-family: 'brush script MT', cursive;
+  
+; /* EDIT */
 }
 
 body h2 {
